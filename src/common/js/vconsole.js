@@ -1,2 +1,6 @@
 import VConsole from 'vconsole'
-export default new VConsole()
+let vconsole
+if (window.envConfig.hasConsole) {
+  vconsole = new VConsole()
+}
+export default vconsole
