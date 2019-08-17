@@ -9,7 +9,7 @@ export default {
     return {}
   },
   created () {
-    this.eventBus.$on('headerGoback', () => {
+    this.$eventBus.$on('headerGoback', () => {
       console.log('返回')
     })
   }

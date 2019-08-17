@@ -10,7 +10,7 @@ import '@/common/js/vconsole'
 // 解决移动端浏览器点击300毫秒的延迟
 fastclick.attach(document.body)
 
-Vue.prototype.eventBus = EventBus
+Vue.prototype.$eventBus = EventBus
 
 Vue.config.productionTip = false
 
