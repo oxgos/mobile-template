@@ -5,16 +5,19 @@
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <global-modal></global-modal>
   </div>
 </template>
 
 <script>
-import VHeader from '@/components/VHeader/VHeader'
+import VHeader from '@/components/vHeader/vHeader'
+import GlobalModal from '@/components/globalModal/globalModal'
 
 export default {
   name: 'app',
   components: {
-    VHeader
+    VHeader,
+    GlobalModal
   }
 }
 </script>

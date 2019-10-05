@@ -7,18 +7,14 @@
 
 <script type="text/ecmascript-6">
 import { XHeader } from 'vux'
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
-  data () {
-    return {
-    }
-  },
   components: {
     XHeader
   },
   computed: {
-    ...mapState([
+    ...mapGetters([
       'preventGoBack',
       'showBack',
       'headerTitle'
